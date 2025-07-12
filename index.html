@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Línea Íntima</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -15,7 +14,7 @@
     }
     .logo {
       text-align: center;
-      margin-top: 20px;
+      margin: 20px 0;
     }
     .logo img {
       max-width: 250px;
@@ -28,133 +27,128 @@
       text-align: center;
       margin-bottom: 10px;
     }
+    .bienvenida-texto,
     .sobre-nosotras p {
       text-align: center;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 30px;
     }
-    nav {
-      background-color: #d48487;
+    .catalogo {
+      text-align: center;
     }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
+    .producto {
+      display: inline-block;
+      margin: 15px;
+      background: white;
+      border-radius: 8px;
       padding: 10px;
-      margin: 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
     }
-    nav ul li {
-      margin: 0 15px;
+    .producto img {
+      width: 100%;
+      border-radius: 8px;
     }
-    nav ul li a {
+    .boton-compra {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #d48487;
       color: white;
+      padding: 10px;
+      border-radius: 5px;
       text-decoration: none;
-      font-weight: bold;
     }
     footer {
       background-color: #d48487;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
     footer ul {
       list-style: none;
       padding: 0;
-      margin: 10px 0;
     }
     footer ul li {
       margin: 5px 0;
     }
-    footer ul li a {
-      color: white;
-      text-decoration: none;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    .whatsapp-float img {
+      width: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="contenedor">
-    <div class="lado-derecho">
-
-      <div class="logo">
-        <img src="https://i.imgur.com/y0decpj.png" alt="Línea Íntima">
-      </div>
-
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#nosotras">Sobre Nosotras</a></li>
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section id="home" class="bienvenida">
-        <h2 class="titulo-especial">Bienvenida</h2>
-        <p class="bienvenida-texto">
-          Bienvenida a tu espacio de elegancia y sensualidad.<br>
-          En Línea Íntima encontrarás prendas diseñadas para realzar tu belleza y estilo.<br>
-          Cada pieza expresa delicadeza, comodidad y confianza.<br>
-          ¡Explora nuestro catálogo y déjate enamorar!
-        </p>
-      </section>
-
-      <section id="nosotras" class="sobre-nosotras">
-        <h2 class="titulo-especial">Sobre Nosotras</h2>
-        <p>
-          Línea Íntima nace de la pasión por la delicadeza y la confianza femenina. <br>
-          Creamos un espacio donde cada prenda celebra tu cuerpo y tu esencia. <br>
-          Nuestro propósito es acompañarte con elegancia en cada momento íntimo.
-        </p>
-      </section>
-
-      <section id="catalogo" class="catalogo">
-        <h2>Catálogo</h2>
-
-        <div class="producto">
-          <img src="https://i.imgur.com/U4eAF7X.jpeg" alt="Conjunto Rosado">
-          <h3>Conjunto Rosado</h3>
-          <p class="precio">S/ 40.00</p>
-          <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Rosado.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
-        </div>
-
-        <div class="producto">
-          <img src="https://i.imgur.com/BoW7EcS.jpeg" alt="Conjunto Negro">
-          <h3>Conjunto Negro</h3>
-          <p class="precio">S/ 40.00</p>
-          <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Negro.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
-        </div>
-
-        <p class="frase-inspiradora">“Siente tu poder. Viste tu esencia.”</p>
-
-        <div class="producto">
-          <img src="https://i.imgur.com/lZ6tsHy.jpeg" alt="Conjunto Blanco">
-          <h3>Conjunto Blanco</h3>
-          <p class="precio">S/ 40.00</p>
-          <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Blanco.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
-        </div>
-
-        <div class="producto">
-          <img src="https://i.imgur.com/MxS8p5d.jpeg" alt="Conjunto Rojo">
-          <h3>Conjunto Rojo</h3>
-          <p class="precio">S/ 40.00</p>
-          <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Rojo.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
-        </div>
-      </section>
-
-      <footer id="contacto">
-        <h2>Contacto</h2>
-        <ul>
-          <li><a href="https://wa.me/51923949727" target="_blank">📱 WhatsApp</a></li>
-          <li><a href="#" target="_blank">📸 Instagram</a></li>
-          <li><a href="#" target="_blank">🎵 TikTok</a></li>
-          <li><a href="mailto:lineaintimaperu@gmail.com">✉️ lineaintimaperu@gmail.com</a></li>
-        </ul>
-        <p>&copy; 2025 Línea Íntima</p>
-      </footer>
-    </div>
+  <div class="logo">
+    <img src="https://i.imgur.com/y0decpj.png" alt="Línea Íntima">
   </div>
+
+  <section id="home" class="bienvenida">
+    <h2 class="titulo-especial">Bienvenida</h2>
+    <p class="bienvenida-texto">
+      Bienvenida a tu espacio de elegancia y sensualidad.<br>
+      En Línea Íntima encontrarás prendas diseñadas para realzar tu belleza y estilo.<br>
+      Cada pieza expresa delicadeza, comodidad y confianza.<br>
+      ¡Explora nuestro catálogo y déjate enamorar!
+    </p>
+  </section>
+
+  <section id="nosotras" class="sobre-nosotras">
+    <h2 class="titulo-especial">Sobre Nosotras</h2>
+    <p>
+      Línea Íntima nace de la pasión por la delicadeza y la confianza femenina.<br>
+      Creamos un espacio donde cada prenda celebra tu cuerpo y tu esencia.<br>
+      Nuestro propósito es acompañarte con elegancia en cada momento íntimo.
+    </p>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo</h2>
+
+    <div class="producto">
+      <img src="https://i.imgur.com/U4eAF7X.jpeg" alt="Conjunto Rosado">
+      <h3>Conjunto Rosado</h3>
+      <p class="precio">S/ 40.00</p>
+      <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Rosado.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
+    </div>
+
+    <div class="producto">
+      <img src="https://i.imgur.com/BoW7EcS.jpeg" alt="Conjunto Negro">
+      <h3>Conjunto Negro</h3>
+      <p class="precio">S/ 40.00</p>
+      <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Negro.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
+    </div>
+
+    <p class="frase-inspiradora">“Siente tu poder. Viste tu esencia.”</p>
+
+    <div class="producto">
+      <img src="https://i.imgur.com/lZ6tsHy.jpeg" alt="Conjunto Blanco">
+      <h3>Conjunto Blanco</h3>
+      <p class="precio">S/ 40.00</p>
+      <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Blanco.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
+    </div>
+
+    <div class="producto">
+      <img src="https://i.imgur.com/MxS8p5d.jpeg" alt="Conjunto Rojo">
+      <h3>Conjunto Rojo</h3>
+      <p class="precio">S/ 40.00</p>
+      <a class="boton-compra" href="https://wa.me/51923949727?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Rojo.%20%C2%BFEst%C3%A1%20disponible%3F">Comprar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <ul>
+      <li><a href="https://wa.me/51923949727" target="_blank">📱 WhatsApp</a></li>
+      <li><a href="#" target="_blank">📸 Instagram</a></li>
+      <li><a href="#" target="_blank">🎵 TikTok</a></li>
+      <li><a href="mailto:lineaintimaperu@gmail.com">✉️ lineaintimaperu@gmail.com</a></li>
+    </ul>
+    <p>&copy; 2025 Línea Íntima</p>
+  </footer>
 
   <a href="https://wa.me/51923949727" class="whatsapp-float" target="_blank">
     <img src="https://i.imgur.com/4LDUz2F.png" alt="WhatsApp">
