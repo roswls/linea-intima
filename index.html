@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linea Íntima</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Línea Íntima</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="left-panel">
-      <h1>Linea Íntima</h1>
-      <p>Diseñada para tu esencia</p>
+  <header>
+    <h1>Línea Íntima</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="bienvenida">
+    <h2>Diseñada para tu esencia</h2>
+    <p>Descubre prendas íntimas que resaltan tu feminidad y elegancia.</p>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo</h2>
+    <div class="producto">
+      <img src="https://media.victoriassecretbeauty.pe/is/image/VictoriasSecretBeauty/1122705954A2_F?" alt="Panty Tanga Negro" />
+      <h3>Panty Tanga Negro</h3>
+      <p class="precio">S/ 45.00</p>
+      <a
+        class="boton-compra"
+        href="https://wa.me/51923949727?text=Hola,%20estoy%20interesada%20en%20el%20producto:%20Panty%20Tanga%20Negro.%20%C2%BFEst%C3%A1%20disponible%3F"
+        target="_blank"
+      >Comprar por WhatsApp</a>
     </div>
-    <div class="right-panel">
-      <nav class="navbar">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">OUR SERVICES</a>
-        <a href="#">CONTACT</a>
-      </nav>
-      <main>
-        <h2>Welcome</h2>
-        <p>
-          Since our opening, we have become masters of our craft. 
-          Our commitment to quality products, exceptional services 
-          and incomparable customer care keep our community 
-          coming back again and again.
-        </p>
-        <div class="contact-info">
-          <p>info@mysite.com<br>123-456-7890</p>
-        </div>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </main>
-    </div>
-  </div>
+  </section>
+
+  <footer id="contacto">
+    <p>Contáctanos por WhatsApp al <strong>+51 923 949 727</strong></p>
+    <p>Síguenos en:
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+    </p>
+    <p>&copy; 2025 Línea Íntima</p>
+  </footer>
 </body>
-</html>  
+</html>
